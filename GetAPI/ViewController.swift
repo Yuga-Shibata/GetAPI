@@ -31,6 +31,8 @@ class ViewController: UIViewController {
                             self.weatherText.text = "晴れです"
                         } else if data.contains("cloud") {
                             self.weatherText.text = "曇りです"
+                        } else if data.contains("rain") {
+                            self.weatherText.text = "雨です"
                         } else if data.contains("snow") {
                             self.weatherText.text = "雪です"
                         }
